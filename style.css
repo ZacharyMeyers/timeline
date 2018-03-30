@@ -4,21 +4,14 @@ html,body,head {height:100%; width:100%; margin:0%;}
 
 
 
-.navagation {
-  position: fixed;
-  top: 0;
-  left:0;
-  bottom:0;
-  overflow-x: none;
-  width:10%;
-  background-color:rgba(0,30,3155,0.4);
-}
-.navagation a:hover{background-color:none;transition: 600ms;}
-.navagation a{padding:.2em;
-  text-decoration:none;
-  border: 1px solid;
-color:grey;}
 
+a.1 {
+    color: red;
+    display: inline-block;
+    transition: 200ms;
+    padding: 1em;
+    border: 1px solid;
+}
 
 body{background:url(generic.png);
       background-position: center center;
@@ -29,26 +22,22 @@ body{background:url(generic.png);
     background-attachment: fixed;background-clip: padding-box;
     background-repeat: no-repeat;}
 
-padding-box{color:none;
-  display: inline-block;
-  transition: 100ms;
-  padding:20em;
-  border:50px solid;
-  margin: .1em;
-  height:100%auto;
-  width:100%;
-  text-align:center;}
 
-div.body
-{box-sizing: border-box; border-width: 12px
-padding: 30px;
-width: 200px;
-height:auto;
-background:url(wireframe.png);
-display: inline-block;}
 
- div.july
- {padding:30px; width:1000; height:10:  border:solid 5vmin #eee;
+div.alpha{padding:30px; width:1000; height:10:  border:solid 5vmin #eee;
+ border-bottom-color:#fff;
+ border-left-color:#eee;
+ border-radius:1px;
+ box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+ box-sizing:border-box;
+ display:inline-block;
+ display:center;
+ margin:10vh 5vw;
+ height:auto;
+ padding:8vmin;
+ position:relative;
+ text-align:center;
+ padding:30px; width:1000; height:10:  border:solid 5vmin #eee;
   border-bottom-color:#fff;
   border-left-color:#eee;
   border-radius:1px;
@@ -60,71 +49,104 @@ display: inline-block;}
   height:auto;
   padding:8vmin;
   position:relative;
-  text-align:center;}
+  text-align:center;
+  background-size: cover;}
+
+div.body
+  {box-sizing: border-box; border-width: 12px
+  padding: 30px;
+  width: 200px;
+  height:auto;
+  background:url(wireframe.png);
+  display: inline-block;}
+
+   div.july
+   {padding:30px; width:1000; height:10:  border:solid 5vmin #eee;
+    border-bottom-color:#fff;
+    border-left-color:#eee;
+    border-radius:1px;
+    box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+    box-sizing:border-box;
+    display:inline-block;
+    display:center;
+    margin:10vh 5vw;
+    height:auto;
+    padding:8vmin;
+    position:relative;
+    text-align:center;
+    background-size: cover;}
 
 
-  div.Navbar-label a {text-align: center; color: white;font-weight: 600;font-size: 30px;letter-spacing: 1.2em; margin-top: 3em; display: block;background: lime;font-family: 'Montserrat', sans-serif;}
+    div.topnav.bottomnav {
+      background-color: ##800000;
+      overflow: hidden;}
+      a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;}
+  a.hover {
+      background-color: #ddd;
+      color: black;}
+  a.active {
+          background-color: #4CAF50;
+          color: white;}
+
+  div {grid-auto-rows: 100px;
+        grid-area: auto;
+        grid-auto-flow: column;
+        grid-auto-rows: 100px;
+        grid-column-end: 2;
+        grid-column-gap: 10px;
+        grid-column-start: auto;}
 
 
-div {grid-auto-rows: 100px;
-      grid-area: auto;
-      grid-auto-flow: column;
-      grid-auto-rows: 100px;
-      grid-column-end: 2;
-      grid-column-gap: 10px;
-      grid-column-start: auto;}
+  img {
+                  border:solid 2px;
+                  border-bottom-color:#ffe;
+                  border-left-color:#eed;
+                  border-right-color:#eed;
+                  border-top-color:#ccb;
+                  max-height:100%;
+                  max-width:100%;
 
+                }
 
+                .frame {
+                  background-color:#ddc;
+                  border:solid 5vmin #eee;
+                  border-bottom-color:#fff;
+                  border-left-color:#eee;
+                  border-radius:1px;
+                  box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+                  box-sizing:border-box;
+                  display:inline-block;
+                  display:center;
+                  margin:10vh 5vw;
+                  height:auto;
 
-
-            img {
-              border:solid 2px;
-              border-bottom-color:#ffe;
-              border-left-color:#eed;
-              border-right-color:#eed;
-              border-top-color:#ccb;
-              max-height:100%;
-              max-width:100%;
-
-            }
-
-            .frame {
-              background-color:#ddc;
-              border:solid 5vmin #eee;
-              border-bottom-color:#fff;
-              border-left-color:#eee;
-              border-radius:1px;
-              box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
-              box-sizing:border-box;
-              display:inline-block;
-              display:center;
-              margin:10vh 5vw;
-              height:auto;
-
-              position:relative;
-              text-align:center;
-              &:before {
-                border-radius:2px;
-                bottom:-2vmin;
-                box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
-                content:"";
-                left:-2vmin;
-                position:absolute;
-                right:-2vmin;
-                top:-2vmin;
-              }
-              &:after {
-                border-radius:2px;
-                bottom:-2.5vmin;
-                box-shadow: black;
-                content:"box-shadow";
-                left:-2.5vmin;
-                position:absolute;
-                right:-2.5vmin;
-                top:-2.5vmin;
-              }
-            }
-
-
-
-            button
+                  position:relative;
+                  text-align:center;
+                  &:before {
+                    border-radius:2px;
+                    bottom:-2vmin;
+                    box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+                    content:"";
+                    left:-2vmin;
+                    position:absolute;
+                    right:-2vmin;
+                    top:-2vmin;
+                  }
+                  &:after {
+                    border-radius:2px;
+                    bottom:-2.5vmin;
+                    box-shadow: black;
+                    content:"box-shadow";
+                    left:-2.5vmin;
+                    position:absolute;
+                    right:-2.5vmin;
+                    top:-2.5vmin;
+                  }
+                }
