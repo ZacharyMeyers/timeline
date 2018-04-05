@@ -2,7 +2,9 @@
 title{color: magenta; font-style:italic;font-size:200px}
 html,body,head {height:100%; width:100%; margin:0%;}
 
-
+div.july{font-size: 17px;
+  font-weight:bold;
+  font-family:"Bradley Hand ITC";}
 
 
 a.1 {
@@ -11,6 +13,7 @@ a.1 {
     transition: 200ms;
     padding: 1em;
     border: 1px solid;
+    font-family: "Algerian";
 }
 
 body{background:url(generic.png);
@@ -86,7 +89,8 @@ div.body
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;}
+        font-size: 17px;
+        font-family: "Algerian"}
   a.hover {
       background-color: #ddd;
       color: black;}
