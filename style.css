@@ -81,7 +81,7 @@ div.body
 
 
     div.topnav.bottomnav {
-      background-color: ##800000;
+      background-color: ##dbbf3d;
       overflow: hidden;}
       a {
         float: left;
@@ -95,7 +95,7 @@ div.body
       background-color: #ddd;
       color: black;}
   a.active {
-          background-color: #4CAF50;
+          background-color: #B8860B;
           color: white;}
 
   div {grid-auto-rows: 100px;
